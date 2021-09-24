@@ -69,7 +69,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'silver_octo.wsgi.application'
+
+# Channels
 ASGI_APPLICATION = "silver_octo.asgi.application"
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer'
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
