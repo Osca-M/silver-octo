@@ -1,2 +1,2 @@
 # silver-octo
-Sampling django_private_chat2
+Sampling Django Channels
